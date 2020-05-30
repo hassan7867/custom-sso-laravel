@@ -1,0 +1,47 @@
+.btn-global {
+    background-color: white;
+    font-size: 18px;
+    font-family: Poppins;
+    font-weight: 600;
+    padding: 4px 30px !important;
+    border-radius: 100px;
+    border: 1px solid #5583ff;
+    cursor: pointer;
+    text-decoration: none !important;
+    color: #5583ff !important;
+}
+
+.btn-global-no-hover {
+    background-color: white;
+    font-size: 18px;
+    font-family: Poppins;
+    font-weight: 600;
+    padding: 4px 30px !important;
+    border-radius: 100px;
+    border: 1px solid #5583ff;
+    cursor: pointer;
+    text-decoration: none !important;
+    color: #5583ff !important;
+}
+
+.btn-global:hover {
+    color: #fff !important;
+    background-color: #5583ff;
+}
+.btn-small{
+    padding: 4px 15px !important;
+}
+
+.fields-background{
+    background-color: #f9f9f9;
+}
+.press-contact{
+    padding: 15px; box-shadow: 0 3px 8px 0px rgba(0,0,0,0.25)!important; background-color: #f9f9f9; border-radius: 8px;
+}
+
+.dashboard-button:hover {
+    color: #3a88ec!important;
+}
+.preview-input-field{
+    background: #f9f9f9 !important; border: none !important;
+}
