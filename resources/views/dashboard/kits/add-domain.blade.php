@@ -1,23 +1,23 @@
-@extends('dashboard.layout')
+@extends('layouts.app')
 @section('content')
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     <div class="container">
-    <center>    <h5 class="mt-4">Add Domain</h5></center>
-        <form method="post" action="{{url("/add-domain")}}" enctype="multipart/form-data">
+      <h5 class="mt-4 mb-3">Add Domain</h5>
+        <form method="post" action="{{url("/add-domain")}}" enctype="multipart/form-data" style="width: 400px">
             {{csrf_field()}}
-            <center>
-            <div class="">
-                <img src="{{asset('landing-page-styles/images/upload_image.png')}}" style="width: 150px!important;" onclick="uploadImage()" class="rounded picture-src" id="photopreview" accept="image/*">
-                <input type="file" name="image" id="photo" style="display: none">
-            </div>
-            </center>
+            {{--<center>--}}
+            {{--<div class="">--}}
+                {{--<img src="{{asset('landing-page-styles/images/upload_image.png')}}" style="width: 150px!important;" onclick="uploadImage()" class="rounded picture-src" id="photopreview" accept="image/*">--}}
+                {{--<input type="file" name="image" id="photo" style="display: none">--}}
+            {{--</div>--}}
+            {{--</center>--}}
             <div class="form-group">
-                <label for="email">Domain Name:</label>
+                <label for="email">App Name:</label>
                 <input type="text" class="form-control" placeholder="Enter Name" name="name" id="name">
             </div>
             <div class="form-group">
-                <label for="pwd">Login URL</label>
-                <input type="text" class="form-control" id="url" placeholder="Enter login Url" name="url">
+                <label for="pwd">Redirect URL</label>
+                <input type="text" class="form-control" id="url" placeholder="Enter redirect Url" name="url">
             </div>
             <button type="submit" id="btnFetch" class="btn btn-primary spinner-border">Submit</button>
         </form>
