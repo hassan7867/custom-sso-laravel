@@ -36,7 +36,7 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm" style="box-shadow: 0 2px 4px -1px rgba(0,0,0,0.25);padding-top: 0.3rem!important;;padding-bottom: 0.3rem!important">
             <div class="container" style="margin-left: 10px !important; margin-right: 10px !important;">
                 <a class="navbar-brand" href="{{ url('/home') }}">
-                    SSO
+                    THREE OPTION SSO
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>

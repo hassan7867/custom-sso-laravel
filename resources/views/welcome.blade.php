@@ -20,7 +20,7 @@
 <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
     <div class="container">
         <a class="navbar-brand" href="{{ url('/') }}">
-            SSO
+            THREE OPTION
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -73,11 +73,11 @@
     <div class="header">
         <div class="container header-container">
             <div class="col-lg-6 header-img-section">
-                <img src="{{asset('landing-page-styles/images/header.png')}}">
+                <img src="{{asset('landing-page-styles/images/header.svg')}}">
             </div>
             <div class="col-lg-5 offset-lg-1 header-title-section">
-                <p class="header-title-text">SSO</p>
-                <p class="header-subtitle">Single SignOn</p>
+                <p class="header-title-text">THREE OPTION SSO</p>
+                <p class="header-subtitle">We provide single sign on solutions</p>
                 <div class="learn-more-btn-section">
                     <a class="nav-link learn-more-btn btn-invert" href="{{ route('register') }}">Get Started</a>
                 </div>
