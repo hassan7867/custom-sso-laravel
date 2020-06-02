@@ -23,8 +23,7 @@
           {{--rel="stylesheet">--}}
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     {{--<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">--}}
-    <script type="text/javascript"
-            src="{{ \Illuminate\Support\Facades\URL::asset('jquery/3.5.1/jquery.min.js')}}"></script>
+    <script type="text/javascript" src="{{ \Illuminate\Support\Facades\URL::asset('jquery/3.5.1/jquery.min.js')}}"></script>
     <script type="text/javascript" src="{{ \Illuminate\Support\Facades\URL::asset('bootstrap.min.js')}}"></script>
     <script type="text/javascript" src="{{ \Illuminate\Support\Facades\URL::asset('popper/popper.min.js')}}"></script>
     {{--<script src="https://kit.fontawesome.com/ffe1193991.js" crossorigin="anonymous"></script>--}}
