@@ -16,6 +16,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/home', "DomainsController@index")->middleware('dashboard')->name('home')->middleware('dashboard');
+Route::get('/working-tutorial', "DomainsController@tutorialWorking")->middleware('dashboard')->name('home')->middleware('dashboard');
 Route::get('add-domain', "DomainsController@addDomain")->middleware('dashboard');
 Route::post('add-domain', "DomainsController@saveDomain")->middleware('dashboard');
 Route::post('/domain/update', "DomainsController@updateDomain")->middleware('dashboard');

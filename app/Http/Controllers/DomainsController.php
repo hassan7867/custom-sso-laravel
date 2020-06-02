@@ -74,4 +74,9 @@ class DomainsController extends Controller
         return redirect('home')->with('message',"Domain updated Successfuly");
     }
 
+    public function tutorialWorking()
+    {
+        return view('working-tutorial');
+    }
+
 }

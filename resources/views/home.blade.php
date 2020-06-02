@@ -6,6 +6,7 @@
                 <h2>Apps</h2>
             </div>
             <div class="col-md-3 text-right mt-2 ml-5">
+                <a  class="btn btn-info float-right ml-3" href="{{url('/working-tutorial')}}">How it works</a>
                 <a  class="btn btn-primary float-right" href="{{url('/add-domain')}}">Register New App</a>
             </div>
         </div>
@@ -21,6 +22,9 @@
                         @endif
                     </div>
                     <div style="width: 150px; padding-right: 10px;padding-left: 10px" class="mt-3">
+                        <h5>ClientId: {{$domainsData->id}}</h5>
+                    </div>
+                    <div style="width: 150px; padding-right: 10px;padding-left: 10px" class="mt-3">
                         <h5>{{$domainsData->name}}</h5>
                     </div>
                     <div style="width: 150px;padding-right: 10px;padding-left: 10px" class="mt-3 ml-2">
@@ -28,7 +32,7 @@
                     </div>
                     <div style="width: 150px;margin-left: 100px;padding-right: 10px;padding-left: 10px" class="mt-2">
                         <p type="text" id="secret-{{$domainsData->id}}" style="display: none;">{{$domainsData->secret}}</p>
-                        <button class="btn btn-primary" onclick="copyKey({{$domainsData->id}})">Copy Secret Key</button>
+                        <button class="btn btn-primary mt-2" onclick="copyKey({{$domainsData->id}})">Copy Secret Key</button>
                     </div>
                     <div style="width: 300px;padding-right: 10px;padding-left: 10px" class="mt-3">
                         <a href="#" class="float-right" style="font-size: 20px"><button class="btn btn-sm btn-danger ml-2" onclick="document.getElementById('delete-form').submit()">Delete</button></a>
