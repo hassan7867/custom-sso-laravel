@@ -7,8 +7,8 @@ if (isset($_REQUEST['code']) && $_REQUEST['code'])
 
     $params = array(
         'grant_type' => 'authorization_code',
-        'client_id' => '5',
-        'client_secret' => '2ef8bc069720e9dfe82bd89027aeee924ac33bbe3828ce689ff342c2f22ff3dea3afcf26cc272b461e5241436be8085c9ae6',
+        'client_id' => '1',
+        'client_secret' => '304c20303949184daa50d8ce3e3dfb6c8ab8692ee568594a85aa18eaca471e51ab639361fbd6ae410349f855f75de6e381b5',
         'redirect_uri' => 'http://client.com/callback.php',
         'code' => $_REQUEST['code']
     );

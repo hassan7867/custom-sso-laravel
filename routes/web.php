@@ -23,3 +23,7 @@ Route::post('/domain/update', "DomainsController@updateDomain")->middleware('das
 Route::post('/domain/delete', "DomainsController@deleteDomain")->middleware('dashboard');
 Route::get('edit/domain/{id}', "DomainsController@editDomain")->middleware('dashboard');
 Auth::routes();
+Route::get('/admin', "AdminController@loginPage");
+Route::post('/admin/login', "AdminController@login")->name('admin.login');
+Route::get('admin-dashboard', "AdminController@adminDashboard");
+Route::post('admin-logout', "AdminController@logout")->name('admin.logout');
